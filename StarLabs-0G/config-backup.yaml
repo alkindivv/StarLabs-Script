@@ -1,0 +1,85 @@
+SETTINGS:
+  THREADS: 1
+  ATTEMPTS: 5
+  SHUFFLE_WALLETS: true
+  WAIT_FOR_TRANSACTION_CONFIRMATION_IN_SECONDS: 240
+  ACCOUNTS_RANGE:
+  - 0
+  - 0
+  EXACT_ACCOUNTS_TO_USE: []
+  PAUSE_BETWEEN_ATTEMPTS:
+  - 3
+  - 10
+  PAUSE_BETWEEN_SWAPS:
+  - 3
+  - 10
+  RANDOM_PAUSE_BETWEEN_ACCOUNTS:
+  - 3
+  - 10
+  RANDOM_PAUSE_BETWEEN_ACTIONS:
+  - 3
+  - 10
+  RANDOM_INITIALIZATION_PAUSE:
+  - 3
+  - 10
+  SEND_TELEGRAM_LOGS: false
+  TELEGRAM_BOT_TOKEN: 12317283:lskjalsdfasdfasd-sdfadfasd
+  TELEGRAM_USERS_IDS:
+  - '235123432'
+FLOW:
+  SKIP_FAILED_TASKS: true
+ZERO_EXCHANGE_SWAPS:
+  BALANCE_PERCENT_TO_SWAP:
+  - 5
+  - 10
+  NUMBER_OF_SWAPS:
+  - 1
+  - 3
+CAPTCHA:
+  SOLVIUM_API_KEY: imIds6spEKczYfrhwVKUeKktww3ATJBf
+  NOCAPTCHA_API_KEY: xxxxxxxxxxxxx
+  USE_NOCAPTCHA: false
+RPCS:
+  ZEROG:
+  - https://evmrpc-testnet.0g.ai
+PUZZLEMANIA:
+  USE_REFERRAL_CODE: false
+  INVITES_PER_REFERRAL_CODE:
+  - 1
+  - 3
+  COLLECT_REFERRAL_CODE: true
+CRUSTY_SWAP:
+  NETWORKS_TO_REFUEL_FROM:
+  - Arbitrum
+  - Optimism
+  - Base
+  AMOUNT_TO_REFUEL:
+  - 0.0003
+  - 0.0004
+  MINIMUM_BALANCE_TO_REFUEL: 99999
+  WAIT_FOR_FUNDS_TO_ARRIVE: true
+  MAX_WAIT_TIME: 999999
+  BRIDGE_ALL: false
+  BRIDGE_ALL_MAX_AMOUNT: 0
+EXCHANGES:
+  name: OKX
+  apiKey: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  secretKey: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  passphrase: xxxxxxx
+  withdrawals:
+  - currency: ETH
+    networks:
+    - Arbitrum
+    - Optimism
+    min_amount: 0.0004
+    max_amount: 0.0006
+    max_balance: 0.005
+    wait_for_funds: true
+    max_wait_time: 99999
+    retries: 3
+OTHERS:
+  SKIP_SSL_VERIFICATION: true
+  USE_PROXY_FOR_RPC: false
+MINTS:
+  OMNIHUB:
+    MAX_PRICE_TO_MINT: 0
